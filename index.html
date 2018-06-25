@@ -1,0 +1,51 @@
+<html>
+     <head>
+
+     
+     	<style>
+
+     	.wrapper {
+     		text-align: center;
+     	}
+
+     	input[type=button] {
+     		width: 15em;
+     		height: 27em;
+     		font-size: 100%;
+     	}
+
+     	input[type=text] {
+     		width: 25em;
+     		height: 3em;
+     		
+     	}
+
+     	input[type=password] {
+     		width: 25em;
+     		height: 3em;
+     		
+     	}
+
+     	</style> 
+
+         <title>Blog</title>
+         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+         <script src="/js/script.js"></script>
+     </head>
+
+     <body style="background-color: lightcyan; font-family: verdana;">
+         <p style="font-weight: bold; font-size: 500%;">blog</p>
+
+         <form style="border-style:solid; border-width: thin; width: auto; padding-bottom: 3%;">
+             <p style="text-align: center; font-size: 175%;">Username <input type="text" class="username" /></p>
+             <p style="text-align: center; font-size: 175%">Password <input type="password" class="password" /></p>
+             <div class="wrapper">
+             	<input " type="button" onclick="loginUser()" value="Login"/>
+             </div>
+         </form>
+         <br/>
+         <br/>
+
+        <p style="text-align: right; font-size: 130%;">Not yet registered? <a href="/register">Click here to create an account.</a> </p>
+    </body>
+</html>

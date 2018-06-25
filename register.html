@@ -1,0 +1,46 @@
+<html>
+    <head>
+    <title>Blog - Register User</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="/js/script.js"></script>
+    <style>
+        .wrapper {
+            text-align: center;
+        }
+
+        input[type=button] {
+            width: 15em;
+            height: 27em;
+            font-size: 100%;
+        }
+
+        input[type=text] {
+            width: 25em;
+            height: 3em;
+            
+        }
+
+        input[type=password] {
+            width: 25em;
+            height: 3em;
+            
+        }
+    </style>
+    </head>
+
+    <body style="background-color: lightcyan; font-family: verdana;">
+        <p style="font-size: 200%; font-weight: bold;">Registration page</p>
+
+        <form style="border-style:solid; border-width: thin; width: auto; padding-bottom: 3%;">
+            <p style="text-align: center; font-size: 175%;">Name <input type="text" class="name" /></p>
+            <p style="text-align: center; font-size: 175%;">Email <input type="text" class="email" /></p>
+            <p style="text-align: center; font-size: 175%;">Username <input type="text" class="username" /></p>
+            <p style="text-align: center; font-size: 175%">Password <input type="password" class="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/></p>
+            <div class="wrapper">
+                <input type="button" onclick="registerUser()" value="Register"/>
+            </div>
+        </form>
+
+        <p><a href="/">Click here to go back.</a> </p>
+    </body>
+</html>
